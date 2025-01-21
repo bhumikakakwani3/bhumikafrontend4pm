@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>child (>) selector use</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+          .A>p{
+            background-color: pink;
+          }
+          .D>p{
+            background-color: red;
+          }
+    </style>
+</head>
+<body>
+    <!-- child selector, it is used to select elements from immediate child (from first level only) -->
+
+    <h1>child (>)selector</h1>
+
+    <div class="A">
+        <p>hello world!</p>
+        <p>hello world!</p>
+        <div class="B">
+            <p> helllo hello world!</p>
+        </div>
+        <p>hello world!</p>
+        <p>hello world!</p>
+    </div>
+    <br> <br>
+    <div class="C">
+        <p>hello world!</p>
+        <p>hello world!</p>
+        <div class="D">
+            <p> helllo hello world!</p>
+        </div>
+        <p>hello world!</p>
+        <p>hello world!</p>
+    </div>
+    
+</body>
+</html>

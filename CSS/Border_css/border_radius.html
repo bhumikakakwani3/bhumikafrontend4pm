@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>border radius</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+    .box1{
+        height: 300px;
+        width: 300px;
+        background-color: tomato;
+        font-size: 45px;
+
+        /* border radius  */
+
+        border-radius: 5px;
+        border-radius: 50px;
+        border-radius: 150px;
+
+    }
+
+    .box2{
+        height: 300px;
+        width: 300px;
+        background-color: red;
+        font-size: 45px;
+
+
+        /* border radius (top-left,top-right,bottom-left,bottom-right)(box2) */
+
+
+        border-top-left-radius: 12px;
+        border-top-right-radius: 24px;
+        border-bottom-left-radius: 45px;
+        border-bottom-right-radius: 30px;
+
+    }
+
+    .box3{
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        font-size: 45px;
+
+
+        /* border radius */
+
+
+        border-radius: 12px ;  /*(top-left)*/
+        border-radius: 12px 24px ;  /*(top-left, top-right)*/
+        border-radius: 12px 24px 45px ;  /*(top-left, top-right,bottom-left)*/
+        border-radius: 12px 24px 45px 30px ;  /*(top-left, top-right,bottom-left,bottom-right)*/
+    }
+
+    .box4{
+        height: 300px;
+        width: 300px;
+        background-color: pink;
+        font-size: 45px;
+
+        /* border radius */
+       
+        border-radius: 50px / 200px ;
+        border-radius: 50px 20px / 600px 200px;
+    }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <br><br>
+
+    <div class="box2">box2</div>
+     <br> <br>
+
+    <div class="box3">box3</div>
+    <br> <br>
+
+    <div class="box4">box4</div>
+</body>
+</html>

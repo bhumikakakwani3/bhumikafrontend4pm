@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>shadow</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            border-radius: 45px;
+            margin: 50px auto;
+
+            /* box-shadow (x-offset, y-offset,blur spread, color)*/
+
+            box-shadow: 0 10px 0 0 black;
+            box-shadow: 10px 10px 5px 0 red;
+        }
+
+      .box1{
+               
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            border-radius: 45px;
+            margin: 50px auto;
+
+
+             /* box-shadow (x-offset, y-offset,blur spread, color, inset)*/
+
+            box-shadow: 20px 20px 5px 2px pink inset ;
+            box-shadow: 10px 20px 5px 2px red inset;
+
+            }
+
+             
+            .box2{
+                height: 300px;
+                width: 300px;
+                background-color: blue;
+                border-radius: 45px;
+                margin: 50px auto;
+
+                box-shadow: 0 0 0 5px black;
+                box-shadow: 0 10px 0 0 black, 0 -10px 0 0 orangered
+
+            }
+
+
+            .box2:hover{
+                transform: translatey(-10px);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px , rgba(0, 0, 0, 3) 0px 30px 60px -30px;
+            }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
