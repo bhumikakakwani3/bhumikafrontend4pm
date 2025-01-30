@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        display: block;
+        margin: 50px auto;
+
+        filter: drop-shadow(2px 2px 5px black);
+      }
+
+      .box {
+        height: 500px;
+        width: 500px;
+        border-radius: 12px;
+        margin: 50px auto;
+
+        background-image: url(https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      input {
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 6px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.206);
+        backdrop-filter: blur(5px);
+        color: white;
+      }
+
+      input::placeholder {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="images/91a2f91d5b755678023430eeece0aeed-removebg-preview.png"
+      alt=""
+    />
+
+    <div class="box">
+      <input type="text" name="" id="" placeholder="Write something here" />
+    </div>
+  </body>
+</html>
