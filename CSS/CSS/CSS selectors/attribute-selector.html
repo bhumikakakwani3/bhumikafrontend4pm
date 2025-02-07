@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       input[type] {
+        background-color: red;
+        color: black;
+      } 
+       input[type='email'] {
+        background-color: black;
+      } 
+
+      p {
+        padding: 5px;
+        border-radius: 8px;
+        background-color: tomato;
+        color: white;
+        font-size: 18px;
+      }
+      /* if exist */
+       p[data-ott] {
+        background-color: teal;
+      } 
+
+      /* if has exact value */
+       p[data-ott='some'] {
+        background-color: teal;
+      } 
+
+      /* if it has hyphen separated value  */
+       p[data-ott|='some'] {
+        background-color: teal;
+      } 
+
+      /* if it has space separated value  */
+      p[data-ott~='some'] {
+        background-color: teal;
+      }
+
+      /* if it is starting with specified value  */
+      p[data-ott^='some'] {
+        background-color: teal;
+      }
+
+      /* if it is ending with specified value  */
+      p[data-ott$='some'] {
+        background-color: teal;
+      }
+
+      /* if it is contains specified value  */
+      p[data-ott*='om'] {
+        background-color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <p>no ott</p>
+    <p data-ott=""="">empty</p>
+    <p data-ott=""="some">bhumika</p>
+    <p data-ott="thing">kakwani</p>
+    <p data-ott="something">bhumikakakwani</p>
+    <p data-ott="some-thing">bhumika-kakwani</p>
+    <p data-ott="some thing">bhumika kakwani</p>
+    <p data-ott="thing some">kakwani bhumika</p>
+    <p data-ott="s-o-m-e">s-o-m-e</p>
+    <p data-ott="me">me</p>
+    <p data-ott="so">so</p>
+    <p data-ott="nothing">nothing</p>
+
+    <input type="" id=" " name="" placeholder="">
+    <input type="email" id=" " name="" placeholder="">
+
+  </body>
+</html>

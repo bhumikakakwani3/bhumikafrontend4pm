@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>pseudo class </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: darkmagenta;
+            border-radius: 25px;
+            margin: 50px auto;
+        }
+        .box:hover{
+            background-color: blue;
+            height: 500px;
+            width: 500px;
+            transition: all 300ms;
+        }
+        a:active{
+            color: brown;
+        }
+        a:visited{
+            color: aqua;
+        }
+        input:focus{
+            outline-color: chartreuse;
+        }
+        button:active{
+            scale: 0.5;
+            transition: all 300ms;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <a href="#" target="_blank">flipkart</a>
+    <a href="#" target="_parent">mdn</a>
+    <input type="text" name="" id="" placeholder="user name"/>
+    <button>click here</button>
+</body>
+</html>

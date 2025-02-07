@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>pseduo element</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            background-image: url(https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-position: bottom;
+            border-radius: 25px;
+            margin: 50px auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            font-weight: 700;
+
+            position: relative;
+            isolation: isolate;
+        }
+        .box::before{
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0,0,0, 188);
+            border-radius: inherit;
+
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        a{
+           margin: 2px;
+           padding: 2px;
+        }
+        a::after{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box"> hello world!</div>
+    <a href="#" >home</a>
+    <a href="#" >about</a>
+    <a href="#" >service</a>
+    <a href="#" >contact us</a>
+</body>
+</html>

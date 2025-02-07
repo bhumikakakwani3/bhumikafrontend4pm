@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>drop shadow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+      
+      /* filter: drop-shadow */
+
+      img {
+        display: block;
+        margin: 50px auto;
+        filter: drop-shadow(5px 5px 5px rgb(88, 240, 88));
+        
+        
+      }
+      .box {
+        height: 500px;
+        width: 500px;
+        border-radius: 12px;
+        margin: 50px auto;
+
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuy_Nso48u82Ibrv-W8Uv6TpfDk2-a1do3rw&s);
+        
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-size: contain;
+      }
+      input {
+        padding: 10px;
+        border: none;
+        border-radius: 12px;
+        font-size: 25px;
+        background-color: rgba(209, 154, 154, 0.631);
+        backdrop-filter: blur(2px);
+        color: white;
+      }
+      input::placeholder {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuy_Nso48u82Ibrv-W8Uv6TpfDk2-a1do3rw&s"
+      alt="motu-patlu"
+    />
+
+    <br /><br />
+    <div class="box">
+      <input type="text" name="" placeholder="write somthing here" />
+    </div>
+  </body>
+</html>
